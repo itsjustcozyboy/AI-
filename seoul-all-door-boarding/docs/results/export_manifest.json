@@ -1,0 +1,24 @@
+{
+  "source_run": "/workspaces/AI-/seoul-all-door-boarding/outputs/baseline",
+  "top_tables_truncated_to_rows": 30,
+  "files_sha256": {
+    "figures/demand_concentration.png": "bb254ca392c2236770b382e32f9c1260d4a8d281cf8478e22403a11b37635325",
+    "figures/hourly_demand.png": "9c90f574953c3fd86e5d900c9a17c5cfa7c9472102ed53b05be3c1ad7b542027",
+    "figures/peak_candidates.png": "b5df56e2ad8aa02889e6f35959b3b88a39dfb5b3c8962be69c25854b5b0f44b4",
+    "figures/route_concentration.png": "c2b018077b2eda854ab4e249b2a84c4e20ff04b8994420030abedacc9799958c",
+    "figures/route_plot_labels.csv": "de7d31621e7caa5594aca42313ad4806f798cf5b1ca5d5e5e4c8761d44726839",
+    "figures/simulated_savings_surface.png": "a453d9372b6692c7d417a312922d0e130df2c0fa45daa04a025d0be51cdc6354",
+    "figures/stop_hour_heatmap.png": "8a6f062ea7532443d66124ef80a20a5d43204c5c233b006ac714deadd921c93f",
+    "figures/top_stops.png": "259867c026299ede058caca075cfce0318782c045d22fbb0d7bcd6e1f372c572",
+    "hourly_demand.csv": "0cdec837437b6a9b6e97f10e5c4d172fde4e7e965f23af4658d6efc01780804d",
+    "peak_candidates.csv": "96b7e05ce20f3e4c208a11728eb0fb3b361747c012190a3b14a9347cfc856314",
+    "pilot_candidates.csv": "e425f8c7e223459bc02f324f2bc2b166b9a803af8f5b634a99b368c78aef9435",
+    "policy_costs_and_risks.csv": "c11591256c9cb4a6ba12fec33f9d1a3330a438a12ea3fbe8a414a41bbd00d8f5",
+    "quality_report.json": "86453c963ebcf52f773d787a103f84f8f48d00380b77c7dfcc48b905411e93a8",
+    "route_concentration.csv": "6181c1b62753c08f5398ca2f556944d5303fbfb6f7b0dcd27744f2618143e56f",
+    "run_manifest.json": "6e3c606ccbf18ec17078ca56bd16e704f25184d6ddf1fa75c360538cd5ed6028",
+    "summary.md": "5e1885c220fef9dfabccbad48ff119ffb52c4788579d4829db75fc1a2fac890e",
+    "top_cell_scenarios.csv": "7e8386861626daa68636a5f3a1c5d1c7976414bdd8a2dc5deb99e69bbd3a2e13",
+    "top_stops.csv": "cd214e0b9a9d7b186808af67b5df885680b995f8915356ed80df32a6b7541de6"
+  }
+}

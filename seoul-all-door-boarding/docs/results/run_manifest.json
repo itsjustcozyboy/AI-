@@ -1,0 +1,134 @@
+{
+  "created_at_utc": "2026-10-19T07:19:32.615924+00:00",
+  "python": "3.12.3",
+  "packages": {
+    "pandas": "2.2.3",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.3",
+    "PyYAML": "6.0.2",
+    "statsmodels": "0.14.4",
+    "scipy": "1.15.3"
+  },
+  "raw_sha256": "c9400f1f13faa92435d036ba4f7ebd227b4e6ef4558a966c90a4c49f26f5fbe3",
+  "settings": {
+    "source": {
+      "dataset_id": "OA-12913",
+      "page_url": "https://data.seoul.go.kr/dataList/OA-12913/F/1/datasetView.do",
+      "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?&useCache=false",
+      "form": {
+        "infId": "OA-12913",
+        "seqNo": "",
+        "seq": "114",
+        "infSeq": "3"
+      },
+      "month": "202609",
+      "encoding": "cp949",
+      "raw_file": "data/raw/boarding_202609.csv",
+      "expected_sha256": "c9400f1f13faa92435d036ba4f7ebd227b4e6ef4558a966c90a4c49f26f5fbe3",
+      "provider": "서울특별시 교통실 교통기획관 교통정책과",
+      "license": "공공누리 1유형 (출처표시)"
+    },
+    "analysis": {
+      "transport_codes": [
+        "010",
+        "020",
+        "040"
+      ],
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "selective_quantile": 0.9,
+      "top_n": 30,
+      "assumed_visits_per_hour": [
+        3,
+        6,
+        12
+      ],
+      "max_observed_dwell_seconds": 600
+    }
+  },
+  "scenarios": {
+    "parameter_status": "assumption",
+    "units": {
+      "overhead_seconds": "seconds/event",
+      "tag_seconds": "seconds/passenger",
+      "front_move_seconds": "seconds/passenger",
+      "rear_move_seconds": "seconds/passenger",
+      "alight_seconds": "seconds/passenger",
+      "interference": "dimensionless",
+      "crowding": "proportional service-time increment",
+      "accessibility_seconds": "seconds/assistance event",
+      "accessibility_probability": "probability/event"
+    },
+    "common": {
+      "overhead_seconds": 5.0,
+      "tag_seconds": 1.5,
+      "front_move_seconds": 1.0,
+      "rear_move_seconds": 1.0,
+      "alight_seconds": 1.2,
+      "accessibility_seconds": 30.0,
+      "accessibility_probability": 0.02
+    },
+    "conditions": {
+      "Conservative": {
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "Base": {
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "Optimistic": {
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      }
+    },
+    "policies": {
+      "scenario_0": {
+        "rear_share": 0.0,
+        "selective": false
+      },
+      "scenario_1": {
+        "rear_share": 0.25,
+        "selective": false
+      },
+      "scenario_2": {
+        "rear_share": 0.5,
+        "selective": false
+      },
+      "scenario_3": {
+        "rear_share": 0.5,
+        "selective": true
+      }
+    }
+  },
+  "source_code_sha256": {
+    "__init__.py": "04ca490c6fc77ec7e227641531a50713cbab58970fc70a665bf05d390190d3ec",
+    "collect.py": "f842d4f949a6c9cd39627c5b9c74ce0a2dc5767122d917da72104ae6907cb250",
+    "common.py": "883da12789447c4b984b80e42b815fdbbe3a5106591a0427c06c730ab85f3859",
+    "dwell_analysis.py": "426d3051e8fb5f03bf6aa9bcf4fd6b9dd83ce138ac4b2953a96d2025c92ac125",
+    "eda.py": "e93e44a84ec834feda0568bbeb23533d11da8f48352b73b55408937b560d1af3",
+    "export_report.py": "b21258882dc98de5169e063d241e8acd0bd8e20fdd3309264db3b2036b211719",
+    "pipeline.py": "d46ee9109d59a9eec5b6834548c4a7608023d14f6a3761d92c1ccf96de4a48f0",
+    "policy_evaluation.py": "33b5b8cb7fd5e9a0e7c227159d7640bcdb9b641e4b3ce9e546f7338d0e50019d",
+    "preprocess.py": "99e04605fb0fc2b4ce0036cd9ee9e320e08796875da5486853e0e35b9efe4e14",
+    "scenario_model.py": "6d800f713158fba702925c36e7b3f79462d0d1b7c4ba9161704c550e4fcf95be",
+    "sensitivity.py": "57241ffd930f20f1018a3734faab6dd9d828f8190793540d440574e095f9971c",
+    "validate.py": "4c86fd76cb5055c7666cccfcdef3cab5cce81892efb3c77ef856b24cf0227f6a",
+    "visualize.py": "3506d64c88e837667644c685cc33971d093c7505277dc990880d36f123c39190"
+  },
+  "selective_monthly_boarding_threshold": 512.0,
+  "dwell_evidence": "not_available",
+  "plan": "C",
+  "events_sha256": null,
+  "policy_headways": "not_estimated_without_dynamic_network_model",
+  "environmental_and_monetary_benefits": "not_estimated_without_verified_factors_and_occupancy"
+}

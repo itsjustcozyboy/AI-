@@ -1,0 +1,19 @@
+source:
+  dataset_id: OA-12913
+  page_url: https://data.seoul.go.kr/dataList/OA-12913/F/1/datasetView.do
+  download_url: https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?&useCache=false
+  form: {infId: OA-12913, seqNo: '', seq: '114', infSeq: '3'}
+  month: '202609'
+  encoding: cp949
+  raw_file: data/raw/boarding_202609.csv
+  expected_sha256: c9400f1f13faa92435d036ba4f7ebd227b4e6ef4558a966c90a4c49f26f5fbe3
+  provider: 서울특별시 교통실 교통기획관 교통정책과
+  license: 공공누리 1유형 (출처표시)
+analysis:
+  # Explicit scope: regular urban buses; village/night/metropolitan excluded.
+  transport_codes: ['010', '020', '040']
+  peak_hours: [7, 8, 9, 17, 18, 19]
+  selective_quantile: 0.9
+  top_n: 30
+  assumed_visits_per_hour: [3, 6, 12]
+  max_observed_dwell_seconds: 600

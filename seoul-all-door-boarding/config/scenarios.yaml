@@ -1,0 +1,29 @@
+# All numbers below are uncalibrated assumptions, NOT observations/literature estimates.
+parameter_status: assumption
+units:
+  overhead_seconds: seconds/event
+  tag_seconds: seconds/passenger
+  front_move_seconds: seconds/passenger
+  rear_move_seconds: seconds/passenger
+  alight_seconds: seconds/passenger
+  interference: dimensionless
+  crowding: proportional service-time increment
+  accessibility_seconds: seconds/assistance event
+  accessibility_probability: probability/event
+common:
+  overhead_seconds: 5.0
+  tag_seconds: 1.5
+  front_move_seconds: 1.0
+  rear_move_seconds: 1.0
+  alight_seconds: 1.2
+  accessibility_seconds: 30.0
+  accessibility_probability: 0.02
+conditions:
+  Conservative: {rear_share_scale: 0.6, interference: 0.8, crowding: 0.4}
+  Base: {rear_share_scale: 1.0, interference: 0.3, crowding: 0.2}
+  Optimistic: {rear_share_scale: 1.0, interference: 0.0, crowding: 0.0}
+policies:
+  scenario_0: {rear_share: 0.0, selective: false}
+  scenario_1: {rear_share: 0.25, selective: false}
+  scenario_2: {rear_share: 0.5, selective: false}
+  scenario_3: {rear_share: 0.5, selective: true}

@@ -1,0 +1,21 @@
+name: analysis-tests
+on:
+  push:
+    paths: ['seoul-all-door-boarding/**', '.github/workflows/analysis-tests.yml']
+  pull_request:
+    paths: ['seoul-all-door-boarding/**', '.github/workflows/analysis-tests.yml']
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: seoul-all-door-boarding
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: seoul-all-door-boarding/requirements.lock.txt
+      - run: python -m pip install -r requirements.lock.txt
+      - run: python -m pytest -q
