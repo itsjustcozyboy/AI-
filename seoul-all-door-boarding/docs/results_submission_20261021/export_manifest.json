@@ -1,0 +1,27 @@
+{
+  "source_run": "/workspaces/AI-/seoul-all-door-boarding/outputs/submission_20261021",
+  "source_manifest_sha256": "a98930a411c98369c5167f0a48df774b73d3127bbf6c8c3dc75a83da398e82e6",
+  "full_totals": true,
+  "pilot_detail_scope": "reference scenario_4 top 3 stops, all their cells",
+  "files_sha256": {
+    "candidate_stability.csv": "af9d31cb63b3203fc5357382515df95909418101ae27739821b81a9be4a4cd4a",
+    "experiment_settings.json": "24f834338009d1adac58e4cca2de7ad504600e4d4b9ccf1492b7848f2a720416",
+    "figures/01_hourly.png": "b4c16a033deab50ed40f6c592f8ef570f99cac8e3e1a640f993c366575053222",
+    "figures/02_candidates.png": "d4294a5aa2140b730f12aabd0c4dfb3eb0f2e010b3a4615d5bb2b3b536205245",
+    "figures/03_surface.png": "8769d8707b01a12c9ef1f086e3ed91dff81d6e4f6109ab53986effdf3d69f914",
+    "figures/04_policies.png": "814fd03ca7ce4581af8690696a69d36978042d11a81059ca190ae6a7612be58d",
+    "figures/05_stability.png": "a21d1bf2a3acafd415723d29c5348dbd40d9453ccb3bb37b880411f10fdce449",
+    "hourly_demand.csv": "0cdec837437b6a9b6e97f10e5c4d172fde4e7e965f23af4658d6efc01780804d",
+    "pilot_operating_cells.csv": "f09f3bc7bbe7b9bc786e267ddb0e790efc4dc3cf83b8f4fd3d4c302644dea1da",
+    "pilot_route_hours.csv": "520f53b89abe6a769ad2586fd5c12f8f923dfe35b365bff26b6992686f60c904",
+    "policy_comparison.csv": "6a4f225a23d16a281e4e77a7cbd77cd3da379c613d92ceb9432215bb9103b1fe",
+    "quality_report.json": "86453c963ebcf52f773d787a103f84f8f48d00380b77c7dfcc48b905411e93a8",
+    "rank_overlap.csv": "e8e7148a61c3f7fc795edd8ce6fb7cf86571bd55bb919e4c4037a6d9e8481605",
+    "run_manifest.json": "a98930a411c98369c5167f0a48df774b73d3127bbf6c8c3dc75a83da398e82e6",
+    "sign_flip_candidates.csv": "3e901cddfa2323a9a9e6fcfd2ab66b47a70c700e60c88098e1058f0dfe119ffb",
+    "summary.md": "2d58bc55d00aa1cf1e5228db5d63121c5294ce06691b7f3d4f832f3579957d55",
+    "top_k_by_setting.csv": "508582b100eae30eeaf87e3a5c6cea85e2abb010a2f8cedc860ee640e084abba",
+    "top_stops.csv": "e4c465fbe1df293d03c292f95cf0da414472107e755d6d8737a30787aace521b",
+    "verification.json": "94d06888a12269f3508854bb8355fa2c9fed22fcae0f64b1035b1832ab4b6749"
+  }
+}

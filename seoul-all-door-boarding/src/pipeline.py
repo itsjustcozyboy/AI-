@@ -32,7 +32,7 @@ def run(output, events_path=None, complete_coverage=False):
     for name, table in tables.items():
         table.to_csv(output / f'{name}.csv', index=False)
     write_json(output / 'quality_report.json', quality)
-    processed = ROOT / 'data/processed'
+    processed = output / 'processed'
     processed.mkdir(parents=True, exist_ok=True)
     df.to_csv(processed / f'boarding_long_{source["month"]}.csv.gz', index=False, compression={'method': 'gzip', 'mtime': 0})
     render(tables, output / 'figures', settings['analysis']['top_n'])
@@ -92,7 +92,7 @@ def run(output, events_path=None, complete_coverage=False):
 
 ## 가정 기반 정책 분석
 
-- 시간당 정차횟수 3·6·12회 × Conservative/Base/Optimistic × 4개 정책.
+- 시간당 정차횟수 3·6·12회 × Conservative/Base/Optimistic × 5개 정책.
 - 월 승하차 / 달력 일수 / 가정 정차횟수로 유체 평균 승객 부하 산정.
 - 정류장·노선별 결과: stop_scenarios.csv, route_scenarios.csv.
 - 음수 절감은 지연 증가. 민감도 최솟값·최댓값은 신뢰구간이 아님.

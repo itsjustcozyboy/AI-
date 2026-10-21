@@ -4,7 +4,25 @@
 
 2026-10-19에 서울 열린데이터광장 OA-12913의 **2026년 9월 CSV 원본 42,155행**을 내려받았습니다. 수집 시점·SHA-256·실제 컬럼은 `data/raw/boarding_202609.csv.manifest.json`에 기록했습니다. 파일은 월별 정류장·노선·시간대 카드 이용 합계이며 차량별 승하차 기록이 아닙니다.
 
-## 실행
+## 제출 전 보완 결과 (2026-10-21)
+
+최신 작성 근거는 [보고서 자료 묶음](docs/report_materials.md), [전체 정책 비교와 검증 수치](docs/results_submission_20261021/summary.md), [시범 운영안](docs/pilot_design.md), [검증 기록](docs/verification.md), [AI 활용 기록](docs/ai_usage.md)입니다. 기존 `docs/results/`와 `outputs/baseline/`은 이전 결과로 보존합니다.
+
+새 실행은 원본부터 23개 설정 × 5정책을 분석합니다. 각 설정의 전체 정책 합계와 악화 분모, 전체 정류장 순위, 기준 전 셀 및 다른 설정의 상위 K 정류장 상세를 공개합니다. 문헌 보정 없는 탐색 모형이며 효과의 실증 검증이 아닙니다.
+
+```bash
+cd seoul-all-door-boarding
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.lock.txt
+.venv/bin/python -m src.collect --register-existing
+.venv/bin/python -m pytest -q
+.venv/bin/python -m src.review_analysis --output outputs/submission_reproduction
+.venv/bin/python -m src.submission_materials --run outputs/submission_reproduction --destination docs/results_reproduction
+```
+
+기존 공식 원본을 등록하거나, 원본이 없으면 `src.collect`가 설정된 공식 파일 수집을 시도합니다. 네트워크 실패 시 자동 대체하지 않습니다. 출력 경로가 이미 채워져 있으면 실패하므로 새 경로를 사용하세요. 이 작업의 새 환경은 `/tmp/seoul-submission-venv/bin/python`, 전체 결과는 `outputs/submission_20261021/`, 공개 근거는 `docs/results_submission_20261021/`입니다. 한글 폰트는 `assets/NanumGothic-Regular.ttf`를 명시적으로 사용하며 OFL 라이선스를 동봉합니다.
+
+## 기존 MVP 실행
 
 Python **3.12** 권장. 기본 환경의 Python 3.14는 이 의존성 조합의 검증 대상이 아닙니다.
 

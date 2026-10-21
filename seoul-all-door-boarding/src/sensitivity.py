@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from .scenario_model import compare
+from .scenario_model import compare, policy_rear_share
 
 
 def run_sensitivity(df, settings, scenarios, threshold, output):
@@ -23,7 +23,7 @@ def run_sensitivity(df, settings, scenarios, threshold, output):
             params = {**scenarios['common'], **modifiers}
             for policy, specification in scenarios['policies'].items():
                 share = specification['rear_share'] * modifiers['rear_share_scale']
-                rear = np.where(selected, share, 0) if specification['selective'] else share
+                rear = policy_rear_share(cells.boardings, cells.alightings, selected, specification, modifiers)
                 baseline, dwell, saved, ratio = compare(b, a, rear, params)
                 out = cells[['month', 'route_id', 'stop_id']].copy()
                 out['baseline_seconds_sum'] = baseline * visits

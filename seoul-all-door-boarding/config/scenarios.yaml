@@ -27,3 +27,9 @@ policies:
   scenario_1: {rear_share: 0.25, selective: false}
   scenario_2: {rear_share: 0.5, selective: false}
   scenario_3: {rear_share: 0.5, selective: true}
+  scenario_4:
+    rear_share: 0.35
+    selective: true
+    alighting_aware: true
+    max_alighting_boarding_ratio: 0.5
+    max_crowding: 0.3

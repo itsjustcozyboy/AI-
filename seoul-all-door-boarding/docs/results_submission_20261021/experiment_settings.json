@@ -1,0 +1,4101 @@
+[
+  {
+    "experiment": "reference",
+    "experiment_type": "reference",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "reference",
+    "experiment_type": "reference",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "reference",
+    "experiment_type": "reference",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "reference",
+    "experiment_type": "reference",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "reference",
+    "experiment_type": "reference",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_tag_seconds_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.0,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_tag_seconds_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.0,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_tag_seconds_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.0,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_tag_seconds_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.0,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_tag_seconds_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.0,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_tag_seconds_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 2.0,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_tag_seconds_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 2.0,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_tag_seconds_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 2.0,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_tag_seconds_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 2.0,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_tag_seconds_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 2.0,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_alight_seconds_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 0.8,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_alight_seconds_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 0.8,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_alight_seconds_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 0.8,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_alight_seconds_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 0.8,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_alight_seconds_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 0.8,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_alight_seconds_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.6,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_alight_seconds_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.6,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_alight_seconds_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.6,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_alight_seconds_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.6,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_alight_seconds_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.6,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_rear_share_scale_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_rear_share_scale_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_rear_share_scale_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_rear_share_scale_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_rear_share_scale_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_rear_share_scale_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.2,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_rear_share_scale_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.2,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_rear_share_scale_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.2,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_rear_share_scale_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.2,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_rear_share_scale_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.2,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_interference_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_interference_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_interference_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_interference_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_interference_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_interference_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.8,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_interference_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.8,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_interference_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.8,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_interference_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.8,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_interference_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.8,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_selective_quantile_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "oat_selective_quantile_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "oat_selective_quantile_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "oat_selective_quantile_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "oat_selective_quantile_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "oat_selective_quantile_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "oat_selective_quantile_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "oat_selective_quantile_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "oat_selective_quantile_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "oat_selective_quantile_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "oat_peak_hours_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        17,
+        18
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_peak_hours_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        17,
+        18
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_peak_hours_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        17,
+        18
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_peak_hours_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        17,
+        18
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_peak_hours_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        17,
+        18
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_peak_hours_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_peak_hours_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_peak_hours_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_peak_hours_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_peak_hours_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_max_alighting_boarding_ratio_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.25,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_max_alighting_boarding_ratio_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.25,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_max_alighting_boarding_ratio_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.25,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_max_alighting_boarding_ratio_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.25,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_max_alighting_boarding_ratio_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.25,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_max_alighting_boarding_ratio_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 1.0,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_max_alighting_boarding_ratio_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 1.0,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_max_alighting_boarding_ratio_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 1.0,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_max_alighting_boarding_ratio_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 1.0,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_max_alighting_boarding_ratio_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 1.0,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_crowding_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.0
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_crowding_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.0
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_crowding_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.0
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_crowding_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.0
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_crowding_0",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.0
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_crowding_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.4
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_crowding_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.4
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_crowding_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.4
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_crowding_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.4
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "oat_crowding_1",
+    "experiment_type": "one_factor",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.4
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "joint_Conservative_0.8",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "joint_Conservative_0.8",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "joint_Conservative_0.8",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "joint_Conservative_0.8",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "joint_Conservative_0.8",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "joint_Conservative_0.95",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "joint_Conservative_0.95",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "joint_Conservative_0.95",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "joint_Conservative_0.95",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "joint_Conservative_0.95",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "joint_Optimistic_0.8",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "joint_Optimistic_0.8",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "joint_Optimistic_0.8",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "joint_Optimistic_0.8",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "joint_Optimistic_0.8",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      },
+      "quantile": 0.8,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 330.0
+  },
+  {
+    "experiment": "joint_Optimistic_0.95",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "joint_Optimistic_0.95",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "joint_Optimistic_0.95",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "joint_Optimistic_0.95",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "joint_Optimistic_0.95",
+    "experiment_type": "multiple_factors",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      },
+      "quantile": 0.95,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 6
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 721.0
+  },
+  {
+    "experiment": "visits_3",
+    "experiment_type": "algebraic_scaling_check",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 3
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "visits_3",
+    "experiment_type": "algebraic_scaling_check",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 3
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "visits_3",
+    "experiment_type": "algebraic_scaling_check",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 3
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "visits_3",
+    "experiment_type": "algebraic_scaling_check",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 3
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "visits_3",
+    "experiment_type": "algebraic_scaling_check",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 3
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "visits_12",
+    "experiment_type": "algebraic_scaling_check",
+    "policy": "scenario_0",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 12
+    },
+    "policy_specification": {
+      "rear_share": 0.0,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "visits_12",
+    "experiment_type": "algebraic_scaling_check",
+    "policy": "scenario_1",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 12
+    },
+    "policy_specification": {
+      "rear_share": 0.25,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "visits_12",
+    "experiment_type": "algebraic_scaling_check",
+    "policy": "scenario_2",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 12
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": false
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "visits_12",
+    "experiment_type": "algebraic_scaling_check",
+    "policy": "scenario_3",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 12
+    },
+    "policy_specification": {
+      "rear_share": 0.5,
+      "selective": true
+    },
+    "threshold": 512.0
+  },
+  {
+    "experiment": "visits_12",
+    "experiment_type": "algebraic_scaling_check",
+    "policy": "scenario_4",
+    "parameters": {
+      "params": {
+        "overhead_seconds": 5.0,
+        "tag_seconds": 1.5,
+        "front_move_seconds": 1.0,
+        "rear_move_seconds": 1.0,
+        "alight_seconds": 1.2,
+        "accessibility_seconds": 30.0,
+        "accessibility_probability": 0.02,
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "quantile": 0.9,
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "max_alighting_boarding_ratio": 0.5,
+      "visits": 12
+    },
+    "policy_specification": {
+      "rear_share": 0.35,
+      "selective": true,
+      "alighting_aware": true,
+      "max_alighting_boarding_ratio": 0.5,
+      "max_crowding": 0.3
+    },
+    "threshold": 512.0
+  }
+]

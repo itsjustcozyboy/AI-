@@ -15,7 +15,7 @@ def test_small_end_to_end_and_selective_scope(tmp_path):
     settings = config('settings.yaml')['analysis']
     tables, threshold = analyze(df, settings)
     stop, route = run_sensitivity(df, settings, config('scenarios.yaml'), threshold, tmp_path)
-    assert len(route) == 36
+    assert len(route) == 45
     assert (route.loc[route.policy.eq('scenario_0'), 'conditional_daily_saved_seconds'] == 0).all()
     # The top demand hours in this synthetic fixture are not peak hours, so selective policy is unchanged.
     assert (route.loc[route.policy.eq('scenario_3'), 'conditional_daily_saved_seconds'] == 0).all()

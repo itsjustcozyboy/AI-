@@ -1,0 +1,338 @@
+{
+  "created_at_utc": "2026-10-21T12:41:04.440453+00:00",
+  "git_status": " M ../README.md\n M README.md\n M config/scenarios.yaml\n M config/settings.yaml\n M docs/methodology.md\n M src/pipeline.py\n M src/scenario_model.py\n M src/sensitivity.py\n M tests/test_pipeline.py\n?? assets/\n?? docs/ai_usage.md\n?? docs/parameter_evidence.csv\n?? docs/pilot_design.md\n?? docs/report_materials.md\n?? docs/source_check_20261021.md\n?? src/review_analysis.py\n?? src/review_figures.py\n?? src/submission_materials.py\n?? tests/test_review_analysis.py\n",
+  "settings": {
+    "source": {
+      "dataset_id": "OA-12913",
+      "page_url": "https://data.seoul.go.kr/dataList/OA-12913/F/1/datasetView.do",
+      "download_url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?&useCache=false",
+      "form": {
+        "infId": "OA-12913",
+        "seqNo": "",
+        "seq": "114",
+        "infSeq": "3"
+      },
+      "month": "202609",
+      "encoding": "cp949",
+      "raw_file": "data/raw/boarding_202609.csv",
+      "expected_sha256": "c9400f1f13faa92435d036ba4f7ebd227b4e6ef4558a966c90a4c49f26f5fbe3",
+      "provider": "서울특별시 교통실 교통기획관 교통정책과",
+      "license": "공공누리 1유형 (출처표시)"
+    },
+    "analysis": {
+      "transport_codes": [
+        "010",
+        "020",
+        "040"
+      ],
+      "peak_hours": [
+        7,
+        8,
+        9,
+        17,
+        18,
+        19
+      ],
+      "selective_quantile": 0.9,
+      "top_n": 30,
+      "assumed_visits_per_hour": [
+        3,
+        6,
+        12
+      ],
+      "max_observed_dwell_seconds": 600,
+      "stability_k": 10,
+      "sensitivity": {
+        "tag_seconds": [
+          1.0,
+          2.0
+        ],
+        "alight_seconds": [
+          0.8,
+          1.6
+        ],
+        "rear_share_scale": [
+          0.6,
+          1.2
+        ],
+        "interference": [
+          0.0,
+          0.8
+        ],
+        "selective_quantile": [
+          0.8,
+          0.95
+        ],
+        "peak_hours": [
+          [
+            7,
+            8,
+            17,
+            18
+          ],
+          [
+            6,
+            7,
+            8,
+            9,
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        ],
+        "max_alighting_boarding_ratio": [
+          0.25,
+          1.0
+        ],
+        "crowding": [
+          0.0,
+          0.4
+        ]
+      }
+    }
+  },
+  "scenarios": {
+    "parameter_status": "assumption",
+    "units": {
+      "overhead_seconds": "seconds/event",
+      "tag_seconds": "seconds/passenger",
+      "front_move_seconds": "seconds/passenger",
+      "rear_move_seconds": "seconds/passenger",
+      "alight_seconds": "seconds/passenger",
+      "interference": "dimensionless",
+      "crowding": "proportional service-time increment",
+      "accessibility_seconds": "seconds/assistance event",
+      "accessibility_probability": "probability/event"
+    },
+    "common": {
+      "overhead_seconds": 5.0,
+      "tag_seconds": 1.5,
+      "front_move_seconds": 1.0,
+      "rear_move_seconds": 1.0,
+      "alight_seconds": 1.2,
+      "accessibility_seconds": 30.0,
+      "accessibility_probability": 0.02
+    },
+    "conditions": {
+      "Conservative": {
+        "rear_share_scale": 0.6,
+        "interference": 0.8,
+        "crowding": 0.4
+      },
+      "Base": {
+        "rear_share_scale": 1.0,
+        "interference": 0.3,
+        "crowding": 0.2
+      },
+      "Optimistic": {
+        "rear_share_scale": 1.0,
+        "interference": 0.0,
+        "crowding": 0.0
+      }
+    },
+    "policies": {
+      "scenario_0": {
+        "rear_share": 0.0,
+        "selective": false
+      },
+      "scenario_1": {
+        "rear_share": 0.25,
+        "selective": false
+      },
+      "scenario_2": {
+        "rear_share": 0.5,
+        "selective": false
+      },
+      "scenario_3": {
+        "rear_share": 0.5,
+        "selective": true
+      },
+      "scenario_4": {
+        "rear_share": 0.35,
+        "selective": true,
+        "alighting_aware": true,
+        "max_alighting_boarding_ratio": 0.5,
+        "max_crowding": 0.3
+      }
+    }
+  },
+  "raw_sha256": "c9400f1f13faa92435d036ba4f7ebd227b4e6ef4558a966c90a4c49f26f5fbe3",
+  "python": "3.12.3",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.3",
+    "PyYAML": "6.0.2",
+    "scipy": "1.15.3",
+    "pytest": "8.4.1"
+  },
+  "git_commit": "ece37c64d84865e1aa7dc656afb07dcb59ada361",
+  "source_code_sha256": {
+    "src/__init__.py": "04ca490c6fc77ec7e227641531a50713cbab58970fc70a665bf05d390190d3ec",
+    "src/collect.py": "f842d4f949a6c9cd39627c5b9c74ce0a2dc5767122d917da72104ae6907cb250",
+    "src/common.py": "883da12789447c4b984b80e42b815fdbbe3a5106591a0427c06c730ab85f3859",
+    "src/dwell_analysis.py": "426d3051e8fb5f03bf6aa9bcf4fd6b9dd83ce138ac4b2953a96d2025c92ac125",
+    "src/eda.py": "e93e44a84ec834feda0568bbeb23533d11da8f48352b73b55408937b560d1af3",
+    "src/export_report.py": "b21258882dc98de5169e063d241e8acd0bd8e20fdd3309264db3b2036b211719",
+    "src/pipeline.py": "e204babff530914a68c4a68c009d179467dc9b8c32a8a5349b1997601d30ba10",
+    "src/policy_evaluation.py": "33b5b8cb7fd5e9a0e7c227159d7640bcdb9b641e4b3ce9e546f7338d0e50019d",
+    "src/preprocess.py": "99e04605fb0fc2b4ce0036cd9ee9e320e08796875da5486853e0e35b9efe4e14",
+    "src/review_analysis.py": "f0cd8ddf237ec833d6eeed75e7037f31f3309705979c4c1db026cf82f184ecb7",
+    "src/review_figures.py": "d15193d16c130c126e0100d5888a3a6f27e8b973fdc1e7cb342e7f579111b948",
+    "src/scenario_model.py": "70e795b48e174921f40c4703a7409e421a9eea047929051f66740045bb482fe7",
+    "src/sensitivity.py": "c820a91cd70b8fb50b6bab13771b67794ea3ba373572aeb7c6c6b800ad1bf326",
+    "src/submission_materials.py": "dea86413602522ec0b759f78db10b6eabe980760589ad072aab2f80885cf2ad8",
+    "src/validate.py": "4c86fd76cb5055c7666cccfcdef3cab5cce81892efb3c77ef856b24cf0227f6a",
+    "src/visualize.py": "3506d64c88e837667644c685cc33971d093c7505277dc990880d36f123c39190",
+    "config/scenarios.yaml": "f7acb553c6c0d69b3dadba3ea7ac596b824d89ecb7ca5ce8ddd7efba0063f38c",
+    "config/settings.yaml": "24e756ac1e73793ce4d3b928accd95d8e66d7e35e3cb8c70ff15b6ba7f7303fe",
+    "tests/test_collect.py": "79e79cac7226a61f39c40436bcc0f8cff89a640ebbd956dcd20dbb6dce112bcd",
+    "tests/test_dwell_analysis.py": "b59da85842c158bf7ee2211e14155dddf5e67d8ab916d4412e438be08daf449b",
+    "tests/test_pipeline.py": "4039c820cda104a8ad8690e50363a1d8ff3ecdddb06837a9b85a4414eb31bf32",
+    "tests/test_preprocess.py": "95ca940cc3f71a878f0d6e586f4f114453b2f3b683d589314375a8d9434a0f3c",
+    "tests/test_review_analysis.py": "56bd66997c8159ecf8660dadabb1f16b9860f90c2d69ccfd210fbf557ad722cd",
+    "tests/test_scenario_model.py": "c1215635ec2be6cd6bc1330b4668520d0b3122ede96d0721ebce0d8a9dd7cd1d",
+    "assets/NanumGothic-Regular.ttf": "76f45ef4a6bcff344c837c95a7dcc26e017e38b5846d5ae0cdcb5b86be2e2d31",
+    "assets/OFL.txt": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f"
+  },
+  "outputs_sha256": {
+    "candidate_ranks.csv.gz": "a5d15f6fa2f1d34c4ce6b9baf7310e25eb511aca03761c7f276c8bfe58ef7d84",
+    "candidate_stability.csv": "af9d31cb63b3203fc5357382515df95909418101ae27739821b81a9be4a4cd4a",
+    "cells/joint_Conservative_0.8_scenario_0.csv.gz": "78ad4f7a29478df959210891ef2590f922285b3d32df4967183ca9c6d354a542",
+    "cells/joint_Conservative_0.8_scenario_1.csv.gz": "66f008ecf22b817bddc5b61edcdce1ef67f63c1e3e5b0f49c4bec1ef2059c4cc",
+    "cells/joint_Conservative_0.8_scenario_2.csv.gz": "06f85bfe8c3e355c57255deb3056b6eac04d02b0bc15f6cdb2946ecf9cd61221",
+    "cells/joint_Conservative_0.8_scenario_3.csv.gz": "9908582b7b75ae2f294a99c07f4447838ca28e0ebb8b22656fa78c7b64e39247",
+    "cells/joint_Conservative_0.8_scenario_4.csv.gz": "10b08ee35e50ce3b263ec9f3367fccf32eea58f0099f1bf481a7c6243f905832",
+    "cells/joint_Conservative_0.95_scenario_0.csv.gz": "f7b75bed4bf961f5889b88c4b52cbe637525cac50f75bf57ee260bbc7e86b928",
+    "cells/joint_Conservative_0.95_scenario_1.csv.gz": "dccbaeb1147e00077d06cd993b004244d00e3b91476e9a5f5afd5ba98b67ebc3",
+    "cells/joint_Conservative_0.95_scenario_2.csv.gz": "8afee9973c1a35631c20399459309ad8acc95ed0b2c8d317ab43faa3ffc166a0",
+    "cells/joint_Conservative_0.95_scenario_3.csv.gz": "61d6eeab06f56ab3600542d2c4fde6a6d900175a85c6038d33685742f0c32508",
+    "cells/joint_Conservative_0.95_scenario_4.csv.gz": "e7b439b2982b569a9bc80717971844040606c38652a153f2873735e3a3c3d0c7",
+    "cells/joint_Optimistic_0.8_scenario_0.csv.gz": "32d284cd4005061a37463dc64786877a07866f26cf7e08fa911bfd4e143a75dd",
+    "cells/joint_Optimistic_0.8_scenario_1.csv.gz": "7388c7d1b46672f099c6ba3860f31b54e3a93626e734d12bbe52a1139d6ebe3a",
+    "cells/joint_Optimistic_0.8_scenario_2.csv.gz": "bfb3b81bc710eff72c904d7958de4638a5c2692d06bf7d2597653339fd1f1aa7",
+    "cells/joint_Optimistic_0.8_scenario_3.csv.gz": "187776d2b4dec558964ad812a4e6b9c60d44cd5615e6a4a52f66fa7685803e10",
+    "cells/joint_Optimistic_0.8_scenario_4.csv.gz": "14cb0e6f37e3f261aacd161295d0c944fb76fd663216057d01ec397aed7b0161",
+    "cells/joint_Optimistic_0.95_scenario_0.csv.gz": "00164768640b255cb55954f597986e4b7e086ab14498075cd3d9063781122cb3",
+    "cells/joint_Optimistic_0.95_scenario_1.csv.gz": "fb37f95c8fe5d2bf57da31e08d33115adb1745c5e38fd8d47053f5e7961260c8",
+    "cells/joint_Optimistic_0.95_scenario_2.csv.gz": "a061b9dbb08e4543c19d13e89e4ea8244928ee04f38d235babd163a1eb01a57f",
+    "cells/joint_Optimistic_0.95_scenario_3.csv.gz": "8a98359888d2b067f82f637ede4d8268497f7f00622d81d794ed59dac7024051",
+    "cells/joint_Optimistic_0.95_scenario_4.csv.gz": "7524a5f865cd02bd4ffa6cc83e955e093a7ff7d8913aa93f121496a3b6be7388",
+    "cells/oat_alight_seconds_0_scenario_0.csv.gz": "76df08339c920c3d1959fd678626c0d51301c656e065f8dd8c4246c9d67a92bd",
+    "cells/oat_alight_seconds_0_scenario_1.csv.gz": "8cdeeb8abe796e5e7df73057d7bdbece6739ecc9be9990b152addf6741d9bf49",
+    "cells/oat_alight_seconds_0_scenario_2.csv.gz": "01d483a20734417b1622adb3592affa0d4682064040de570b192c9272e2a203e",
+    "cells/oat_alight_seconds_0_scenario_3.csv.gz": "c2ee2676206de06d2ec43780983a16138dd0bbb8a4a3bf7a8d96f7c994503c29",
+    "cells/oat_alight_seconds_0_scenario_4.csv.gz": "891478e9a95f5598c72c201d6397017a591e7e3aa838a947ed89725c6f2337d8",
+    "cells/oat_alight_seconds_1_scenario_0.csv.gz": "bc4f1ea1c7175e9969f0da2bf764201d9f5292ad2eba6dbcf1c257679a307123",
+    "cells/oat_alight_seconds_1_scenario_1.csv.gz": "dea6a39266cce6dd9dab7fde4abbedd3311c2d70162b8ec201df3c04a5bfef9d",
+    "cells/oat_alight_seconds_1_scenario_2.csv.gz": "58392cd64f51c8bc4784016f3ec4b1e46c6e269d4368554a954ecd076c116e79",
+    "cells/oat_alight_seconds_1_scenario_3.csv.gz": "cc51060c6c822ba6d6d9d46ef230a9d7b491a419c1cedbe9664a96e217e502af",
+    "cells/oat_alight_seconds_1_scenario_4.csv.gz": "73d495c5d2dcf231d2ef86aefa76346eefcaf80d7d6f68144d749007e2755386",
+    "cells/oat_crowding_0_scenario_0.csv.gz": "e30254bad82ff3fab3de6a11e68b1e0ca72e2552720f7a162f494642deeb1292",
+    "cells/oat_crowding_0_scenario_1.csv.gz": "3ce3b5fa58c2a366817dbcac896e0762e0abee44a8c3b514ae0d4018de8102c1",
+    "cells/oat_crowding_0_scenario_2.csv.gz": "46bff40e6808c2d071498ac6ae3ba2de0a5dffa09b2a88b96b9e2a744d3a337b",
+    "cells/oat_crowding_0_scenario_3.csv.gz": "d3009f490b0ca799fb0a1c619c11822090dd8fa4868b2d3494dfea61e86e5831",
+    "cells/oat_crowding_0_scenario_4.csv.gz": "b5ea16b261a8660643604e7195130c4a90c8eb00657b202a7ef907d0aec1b2a1",
+    "cells/oat_crowding_1_scenario_0.csv.gz": "b938f2af225bd6c84ba6bd8b9891fa83866f72bcd4b521ebda64b92217a8d80f",
+    "cells/oat_crowding_1_scenario_1.csv.gz": "56c19c0c5f7a76ddda75addd63439aacea1610adb60187a5c3408082d98495b5",
+    "cells/oat_crowding_1_scenario_2.csv.gz": "4965ba48b4a9028ddfcac72674f0c83ab164bc0ba5d0ac7dbc3005097b47462e",
+    "cells/oat_crowding_1_scenario_3.csv.gz": "82f43751a062f035b5bdb90aa4c0d5a7ff064b15a8c004a5b4ea3b26839599fe",
+    "cells/oat_crowding_1_scenario_4.csv.gz": "19f9a86af001593e4a40ede8c253ffa6afc7291866669639425e252b9a62c1b7",
+    "cells/oat_interference_0_scenario_0.csv.gz": "495d469a9489fa4eac9cd6a1fd3d244fc7cc16c722ae2f4f8afca98500eaad83",
+    "cells/oat_interference_0_scenario_1.csv.gz": "9f2d6094137641ea56f06ab7c08a273ae7f2e3428aabf17ce06ce5d7a5bd83e3",
+    "cells/oat_interference_0_scenario_2.csv.gz": "1170b1d8f4da863eb794a46b24d78c7b584656f6b5f23bf19d53109bf6669f39",
+    "cells/oat_interference_0_scenario_3.csv.gz": "e32cd97659915060f92b54dff8e4c59f165c089dedd965d83be9d4a6c358fdc7",
+    "cells/oat_interference_0_scenario_4.csv.gz": "886910d42063fdb48bfb51b28d94f683ee61eb743f66909f5df0ed1c5d3a6403",
+    "cells/oat_interference_1_scenario_0.csv.gz": "ffa3c0f438c34dfc5a10cc69b7301dd87a5e89d4af122d7eb7fc1dfaf5a991e9",
+    "cells/oat_interference_1_scenario_1.csv.gz": "e6b291c70136f6912bdedf5582780a47015abdff266ac183fa1fdff6e9b908e1",
+    "cells/oat_interference_1_scenario_2.csv.gz": "fc9592e119d85813af64ec661d298a33a75b48573587156bcdcbf3a717773ef6",
+    "cells/oat_interference_1_scenario_3.csv.gz": "eb23ad2b52e99b55f5012b521a0d7960122fa0a21ffbc7ef76795aef9e9fa7ee",
+    "cells/oat_interference_1_scenario_4.csv.gz": "d42e5b4f67768f3bc8ad4024305c9569c1ba64b2501a0b0ad3305fadf92e015a",
+    "cells/oat_max_alighting_boarding_ratio_0_scenario_0.csv.gz": "a9ec69bf2bc045a792713db0c598bac59615be25017d4ebf52acc0bc2d94f5c0",
+    "cells/oat_max_alighting_boarding_ratio_0_scenario_1.csv.gz": "4d9742c737b680115d4876aee1e1cfdca4e7a164ab4c35c9f8d8b65613d812d0",
+    "cells/oat_max_alighting_boarding_ratio_0_scenario_2.csv.gz": "b3d914aed54b308c34a314a91c32ba9018ee28630da144d3ae8973af2eb008ea",
+    "cells/oat_max_alighting_boarding_ratio_0_scenario_3.csv.gz": "3e37ce13563d2205f826713ca07a31f2c65769efd698b9128bfb20f2d5595fc9",
+    "cells/oat_max_alighting_boarding_ratio_0_scenario_4.csv.gz": "5b01f600361912017a782fac0c94ef1b942744ce5cb531151973a3dad812d3c5",
+    "cells/oat_max_alighting_boarding_ratio_1_scenario_0.csv.gz": "376dbfcddd57523865c70a87e80d3d9f9c6e332da3f9cbe352c4158e08e86e49",
+    "cells/oat_max_alighting_boarding_ratio_1_scenario_1.csv.gz": "f4b9108972c3052da10e193c337d21d098c4d1988ec380250c000655330b1b9a",
+    "cells/oat_max_alighting_boarding_ratio_1_scenario_2.csv.gz": "af805811e086d52cfce335dd2301bc15c25cfd2a57ebcedb9d0f59e19d8811dd",
+    "cells/oat_max_alighting_boarding_ratio_1_scenario_3.csv.gz": "a3183d9258ef3a866e914ac7434e860dd7a0a2804c859f9d3bdf7d10fc0dfd38",
+    "cells/oat_max_alighting_boarding_ratio_1_scenario_4.csv.gz": "6cb9c375590e369e64136ea466758e35674c5b4196c485e5b2e6900e32eaea7e",
+    "cells/oat_peak_hours_0_scenario_0.csv.gz": "a7ddf85653df8984265b86d8d89b433a15de228a5a2f0cd8a3c9b59fe5f21dd3",
+    "cells/oat_peak_hours_0_scenario_1.csv.gz": "1828f5fa3925a8e2a06574980488abb204ad94c579058c642dad2e8bafe008fe",
+    "cells/oat_peak_hours_0_scenario_2.csv.gz": "59a40903df6322d38bee833eb9918f27912c3591f4e4c3d0a916f073e6c2a75e",
+    "cells/oat_peak_hours_0_scenario_3.csv.gz": "500625fff24566ea98f35fb9c6de6dd49d2efc35c5bfde464f592f638a529e82",
+    "cells/oat_peak_hours_0_scenario_4.csv.gz": "e56b1ec002af4548c86566ff86425a23cbe531475b5aabb98b4febe4e229735d",
+    "cells/oat_peak_hours_1_scenario_0.csv.gz": "c1e502f99c28e1cbebd074ad7d2c60869be4369989c7d53fcc0c919aff035052",
+    "cells/oat_peak_hours_1_scenario_1.csv.gz": "4b523cc2f7fa19f678ed01f7850d1ba035ea4c13bd8228799477a22cbdb2ae07",
+    "cells/oat_peak_hours_1_scenario_2.csv.gz": "298cfabd63925720a3fce2a1aeff46074ef569e7214384c05571c6f1a9704f8f",
+    "cells/oat_peak_hours_1_scenario_3.csv.gz": "efb8740ab944e2b14f305507efb0b73353e3a05697124750883b11c2567421dd",
+    "cells/oat_peak_hours_1_scenario_4.csv.gz": "4a54d0e6490b892855435ee4e4ee2c5bca3cdee00246dfd60c1f3402d43868a3",
+    "cells/oat_rear_share_scale_0_scenario_0.csv.gz": "3df87e1f0095e60ea6259a3b4fd7a54656d2b67adff6d6ea3f9df38f8e06c71b",
+    "cells/oat_rear_share_scale_0_scenario_1.csv.gz": "fcd7450d5b42fc05f28998850f4ecba9d71b18fc84227ed435bdfc3e5ff2197b",
+    "cells/oat_rear_share_scale_0_scenario_2.csv.gz": "85e4a09a53d1d1e57bf3388c951aece58c7bd883f3a28900bb15226cfd624b6c",
+    "cells/oat_rear_share_scale_0_scenario_3.csv.gz": "ec5e9fe2866aa33d52c9e808237645bf6ce15c794d94d791bff6d97b37a6fb0a",
+    "cells/oat_rear_share_scale_0_scenario_4.csv.gz": "f2b4da4232fff5b4e0d655103acb9ca173be3cea7e0c745e01d754ff4ba6562e",
+    "cells/oat_rear_share_scale_1_scenario_0.csv.gz": "ded62d3a9c9a81bf300ae489af88bafaf5d17d6fcb4fb584facddee096226a58",
+    "cells/oat_rear_share_scale_1_scenario_1.csv.gz": "5660697195f3996b5b12e74488f063e0b77be0a76dd507e9d1ba595e61e0679a",
+    "cells/oat_rear_share_scale_1_scenario_2.csv.gz": "9c8da42663dcadec656888e1bf0bf9e78e40e5f88baf36fa1435745d481ab3e3",
+    "cells/oat_rear_share_scale_1_scenario_3.csv.gz": "cbe5a0295c75adfc55da62a88484e7e89d2d74ed862682146805b6f9261922d9",
+    "cells/oat_rear_share_scale_1_scenario_4.csv.gz": "bc854d55d25e9ebef458af4598328751a88df4f82439ae4e63c8c2a17f1e4de3",
+    "cells/oat_selective_quantile_0_scenario_0.csv.gz": "49208a39cf56c88015895c2052f0fb3edcf6d3bcb4443032c7e00a40071fa587",
+    "cells/oat_selective_quantile_0_scenario_1.csv.gz": "552dadf105b26c04c92c243728e946e167888561663ab2916b9ca460203579bf",
+    "cells/oat_selective_quantile_0_scenario_2.csv.gz": "ef98664647fadba57f36e24d1c2e6bba6a1f5040c473beeaed57ae5b663c9e81",
+    "cells/oat_selective_quantile_0_scenario_3.csv.gz": "da14a0daecab11cdf3e8eed664d17e3325fbdaca5edaacbb3836a2e3e9201102",
+    "cells/oat_selective_quantile_0_scenario_4.csv.gz": "e494bb898c3f4e4594c52a641d0c1380b7b6b84f4de7cf182cadc2982a4b6f4f",
+    "cells/oat_selective_quantile_1_scenario_0.csv.gz": "29e4940aba81dde2e99adef127347e15676d9c6eb0092ae2c51b42411bfc6df5",
+    "cells/oat_selective_quantile_1_scenario_1.csv.gz": "8484631ecabfbd85c0fa754204f8340ea94d6b4c51777fe77efc075450914e74",
+    "cells/oat_selective_quantile_1_scenario_2.csv.gz": "bf236eabdbb89cab2542bad371af7bb443ceec950079aec0aad28b7a4a5d60d3",
+    "cells/oat_selective_quantile_1_scenario_3.csv.gz": "27e9494e4bbd660bd050bd82853832ba531089d5efdcedd2864afca16c69648e",
+    "cells/oat_selective_quantile_1_scenario_4.csv.gz": "898e5e06e40947151499bc7f3b450bbc45cf200f8a47229e1c51aa19110c8b30",
+    "cells/oat_tag_seconds_0_scenario_0.csv.gz": "1ade95500dadd0db814a618337a3e3575ead6289b1cee0bcaef4fef2e8df1b11",
+    "cells/oat_tag_seconds_0_scenario_1.csv.gz": "2f00ec49f5ab566f51151a515247a79955f30568c2b92250fe52b38af5b3cd05",
+    "cells/oat_tag_seconds_0_scenario_2.csv.gz": "537454b127cb94c106075fd2486441c08aa84d93a9ade552da90c1560ab3b1eb",
+    "cells/oat_tag_seconds_0_scenario_3.csv.gz": "b4f3cf7d781da7266f2ddc1fe285351ecd066af9f1bf0cd5c3c60e7de65f0fd5",
+    "cells/oat_tag_seconds_0_scenario_4.csv.gz": "312fc4a4dbe318f93bada93f418748849a0767b8ad9785d672b604833bf8c5f3",
+    "cells/oat_tag_seconds_1_scenario_0.csv.gz": "fd15ae3d0f3f42b28635f60c511dd31567fc2292d6d84513980e39c0cdd22fe6",
+    "cells/oat_tag_seconds_1_scenario_1.csv.gz": "c21a95e5b5e59fe366a40176a6b43e5398b5558676a73f0266902cc5b9dff6c1",
+    "cells/oat_tag_seconds_1_scenario_2.csv.gz": "5eeaa866e4e0ab5115bf1d6280f1b57b202eb5e179dfa92abf2eb4652ecf9719",
+    "cells/oat_tag_seconds_1_scenario_3.csv.gz": "ddeab4a1a9d4b173977c3b578116e913b2ae9625a5f533a42eb8f1c9202df4e2",
+    "cells/oat_tag_seconds_1_scenario_4.csv.gz": "96d503674d605fb69135c0a609b66d79793587f035bb59343dbbd4cfcd379a37",
+    "cells/reference_scenario_0.csv.gz": "f5d161e19442425b7429b18d26878519c36c43b4f28506b7e9981f46d64f34fa",
+    "cells/reference_scenario_1.csv.gz": "80b7353472bee301357f4409e6a28c4ef56d38e1f5a0d4b1b2d6ee330fbbeac1",
+    "cells/reference_scenario_2.csv.gz": "798e331c9dd203472ac2ecb502a22dc2fb2f2245c074d6c38b65d415e92ffd2f",
+    "cells/reference_scenario_3.csv.gz": "fcd18d8273d36a3c3ede40a1fd284e63a15dc76efa49f1052fc1918353e392c2",
+    "cells/reference_scenario_4.csv.gz": "38dc40b22553a0c21bc4183f88802c24e0f0896d06c8d416b0f8ca19f4b81092",
+    "cells/visits_12_scenario_0.csv.gz": "ae7818cb410265b09e33dae4bcfe36b015cc7f11d01e56c82bc209cd7f0e42d1",
+    "cells/visits_12_scenario_1.csv.gz": "83aecf3fb4abacb7fc150194f6264d2ca834171856f15dc225d322e3df58b57b",
+    "cells/visits_12_scenario_2.csv.gz": "4646545e4c99e5936d6b8547dac6b544984e36734f12fb34adaf3b3d6c21941d",
+    "cells/visits_12_scenario_3.csv.gz": "85b58a1669abadf2789719fb1396550246432efbfab7ab3579fbba1c6c69c334",
+    "cells/visits_12_scenario_4.csv.gz": "b42ac44c91d152c03511660b1508887a6c62774e7de5d6dcc643520c3d1c8393",
+    "cells/visits_3_scenario_0.csv.gz": "98b7b0550b35f048b72eb4e980d2e39b8df940d4241b3e776aeb7a5819f2feb7",
+    "cells/visits_3_scenario_1.csv.gz": "06312289dfce588625e9c41b90072f39b0246c628f97a0ec5c9f4f878bb65203",
+    "cells/visits_3_scenario_2.csv.gz": "b372f9e1cb590f319de393c5df3acee52d2c4b3b23f0b759be50d7cbf83e48b0",
+    "cells/visits_3_scenario_3.csv.gz": "bad5802071c82fab81ee89cb688b961581cabf0fcd7cac0305051df6e59fb135",
+    "cells/visits_3_scenario_4.csv.gz": "579dac7f19f3fa412243d14b768e9accf060cf0e83ec7d1325e7e720643164c3",
+    "demand_distribution.csv": "8fbec57d4a55bbcf798e998f93cd9297534ff542c3f3d37cf16f6b8c165c9b8f",
+    "experiment_settings.json": "24f834338009d1adac58e4cca2de7ad504600e4d4b9ccf1492b7848f2a720416",
+    "figures/01_hourly.png": "b4c16a033deab50ed40f6c592f8ef570f99cac8e3e1a640f993c366575053222",
+    "figures/02_candidates.png": "d4294a5aa2140b730f12aabd0c4dfb3eb0f2e010b3a4615d5bb2b3b536205245",
+    "figures/03_surface.png": "8769d8707b01a12c9ef1f086e3ed91dff81d6e4f6109ab53986effdf3d69f914",
+    "figures/04_policies.png": "814fd03ca7ce4581af8690696a69d36978042d11a81059ca190ae6a7612be58d",
+    "figures/05_stability.png": "a21d1bf2a3acafd415723d29c5348dbd40d9453ccb3bb37b880411f10fdce449",
+    "hourly_demand.csv": "0cdec837437b6a9b6e97f10e5c4d172fde4e7e965f23af4658d6efc01780804d",
+    "observed_cells.csv.gz": "8efd7df2b5cd8a4fdec693acc5b527fe8b2791de9892f50883ca2fbf0bf7167c",
+    "peak_candidates.csv": "04e69f16b031cf080669786379392a55e6d4cf40b7476162e8fccf7760361d0d",
+    "policy_comparison.csv": "6a4f225a23d16a281e4e77a7cbd77cd3da379c613d92ceb9432215bb9103b1fe",
+    "quality_report.json": "86453c963ebcf52f773d787a103f84f8f48d00380b77c7dfcc48b905411e93a8",
+    "rank_overlap.csv": "e8e7148a61c3f7fc795edd8ce6fb7cf86571bd55bb919e4c4037a6d9e8481605",
+    "route_concentration.csv": "6181c1b62753c08f5398ca2f556944d5303fbfb6f7b0dcd27744f2618143e56f",
+    "sign_flip_candidates.csv": "3e901cddfa2323a9a9e6fcfd2ab66b47a70c700e60c88098e1058f0dfe119ffb",
+    "stop_hour_demand.csv": "accba256108273d60cc4dc88342d40707545f7b4eae96cec06e9bd0e34e2ea4c",
+    "stop_policy_summary.csv.gz": "12424fcb4914754dfeeb6708f0ddb18c6953da6171c781926a511da243f17de2",
+    "top_k_by_setting.csv": "508582b100eae30eeaf87e3a5c6cea85e2abb010a2f8cedc860ee640e084abba",
+    "top_stops.csv": "e4c465fbe1df293d03c292f95cf0da414472107e755d6d8737a30787aace521b"
+  }
+}

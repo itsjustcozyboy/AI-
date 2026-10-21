@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks": [
+    "all_run_output_hashes",
+    "all_setting_stop_to_policy_rollup",
+    "reference_cells_to_stops_all_five_policies",
+    "nonapplied_zero_change",
+    "worsened_counts_and_delay",
+    "all_and_applied_denominators",
+    "experiment_traceability",
+    "visits_algebraic_cancellation"
+  ],
+  "empirical_policy_validation": false
+}

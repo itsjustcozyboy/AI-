@@ -33,3 +33,18 @@ def compare(boardings, alightings, rear_share, params):
     policy = dwell_seconds(boardings, alightings, rear_share, params)
     saved = baseline - policy
     return baseline, policy, saved, np.divide(saved, baseline, out=np.zeros_like(saved), where=baseline > 0)
+
+
+def policy_rear_share(boardings, alightings, selected, specification, modifiers):
+    """Monthly composition screen; rear alighting finishes before rear boarding."""
+    b, a = np.broadcast_arrays(np.asarray(boardings, float), np.asarray(alightings, float))
+    share = specification['rear_share'] * modifiers['rear_share_scale']
+    if not np.isfinite(share) or not 0 <= share <= 1:
+        raise ValueError('Effective rear share must be in [0,1]')
+    eligible = np.asarray(selected, bool) if specification['selective'] else np.ones(b.shape, bool)
+    if specification.get('alighting_aware'):
+        ratio = specification['max_alighting_boarding_ratio']
+        if not np.isfinite(ratio) or ratio < 0:
+            raise ValueError('Invalid composition threshold')
+        eligible = eligible & (b > 0) & (a <= ratio * b) & (modifiers['crowding'] <= specification['max_crowding'])
+    return np.where(eligible, share, 0.)
